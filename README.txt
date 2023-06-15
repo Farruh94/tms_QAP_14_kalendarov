@@ -1,21 +1,8 @@
-Для скачивания проекта из GitHub/GitLab надо использовать следуюущую команду.
+git clone https://github.com/Farruh94/tms_QAP_14_kalendarov.git - clone the
+project to your local machine
 
-git clone <project URL>
+Install requirements
+pip install -r requirements.txt
+pip freeze > requirements.txt
 
-Создал ветку QAP_14 командой:
-
-git checkout -b "QAP_14"
-
-В этой ветке создал файл с описанием как я всё это сделал.
-Добавил файл в git
-
-git add .
-
-Сделал коммит:
-
-git commit -m "Added README.txt"
-
-Сделал пуш:
-
-git push origin QAP_14
-
+* Как запустить проект, будет добавлен после появления первых тестов
