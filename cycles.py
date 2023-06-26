@@ -11,10 +11,11 @@ print(c)
 
 # 2
 # Найти сумму всех натуральных чисел от A до B
-a = 10
-b = 20
-for natural_int_1 in range(a, b + 1):
-    natural_int_1 += natural_int_1
+digit_1 = 1
+digit_2 = 20
+for natural_int_1 in (digit_1, digit_2):
+    if natural_int_1 % natural_int_1 == 0 and natural_int_1 % 1 ==0:
+        natural_int_1 += natural_int_1
 print(natural_int_1)
 # Не очень понял, эти два задания.
 # 3
