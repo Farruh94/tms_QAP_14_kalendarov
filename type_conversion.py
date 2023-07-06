@@ -36,9 +36,13 @@ print(my_dict)
 a = {'a': 1, 'b': 2, 'c': 3}
 b = {'c': 3, 'd': 4, 'e': 5}
 ab = {}
-for key in set(list(a.keys()) + list(b.keys())):
-    ab[key] = [a.get(key), b.get(key)]
-print(ab)
+
+def join_dicts():
+    for key in set(list(a.keys()) + list(b.keys())):
+        ab[key] = [a.get(key), b.get(key)]
+    return ab
+
+print(join_dicts())
 
 # *1) Вам передан массив чисел. Известно, что каждое число в этом массиве имеет пару,
 # кроме одного: [1, 5, 2, 9, 2, 9, 1] => 5
