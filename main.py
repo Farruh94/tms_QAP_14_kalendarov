@@ -1,4 +1,5 @@
 import time
+from datetime import date
 name = "John Snow"
 age = 29
 print(name)
@@ -55,3 +56,42 @@ def add(a):
 
 calc = add(11)
 print(calc(12))
+
+
+
+
+
+class File:
+    def init(self, content, date, size):
+        self.content = content
+        self.date = date
+        self.size = size
+
+    def eq(self, other):
+        """
+
+        :param other:
+        :return:
+        """
+        return self.content == other.content and self.size == other.size
+
+    def add(self, other):
+        return File(self.content + other.content, date.today(), self.size + other.size)
+
+    def str(self):
+        return f"{self.content}, {self.date}, {self.size}"
+
+
+file_1 = File("something", "15.07.2023", 8)
+file_2 = File("something", "15.07.2023", 8)
+file_3 = File("something", "15.07.2023", 8)
+
+print(file_1 == file_2 == file_3)
+print(id(file_1))
+print(id(file_2))
+print(id(file_3))
+file_4 = file_1 + file_2
+print(file_4)
+print(file_4.content)
+print(file_4.date)
+print(file_4.size)
