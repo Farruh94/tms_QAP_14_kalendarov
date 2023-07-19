@@ -27,5 +27,14 @@
 
 # словарь с функциями
 
+# word = "abcxyzv"
+# print(word[len(word) // 2])
+# print(word[len(word) // 2 + 1 + 2])
+# print(word[len(word) // 2 - 1 - 2])
+
+
+# assert which_letter_in_center("yyyxyyy") == "x"
+# assert which_letter_in_center("yyyxyyyy") == "x"
+# assert which_letter_in_center("yyyyxyyyy") == "x"
 
 

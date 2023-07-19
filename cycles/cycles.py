@@ -75,7 +75,7 @@ def the_best_swimmer():
     """
     swimmers = {"Бекиш Александр": 21.07, "Будник Алексей": 20.34, "Гребень Анастасия": 22.12, "Давидович Татьяна": 30,
                 "Дешук Дмитрий": 24.01, "Казак Анна": 28.17}
-    return max(swimmers, key=swimmers.get)
+    return min(swimmers, key=swimmers.get)
 
 
 print(the_best_swimmer())
@@ -99,18 +99,18 @@ print(unique_number(1, 2, 3, 3, 1, 2, 4, 3))
 # 1
 # Дано число N. Найти произведение всех чисел от 0 до N.
 
-def pow_digits(zero, number):
+def pow_digits(end):
     """
     Power of all digits in range
     """
     positive_int = 1
-    while zero < number:
-        zero += 1
-        positive_int *= zero
+    start = 0
+    while start < end:
+        positive_int *= start
+        start += 1
     return positive_int
 
-
-print(pow_digits(0, 15))
+print(pow_digits(15))
 
 # 2
 # Поле засеяли цветами двух сортов на площади S1 и S2. Каждый год

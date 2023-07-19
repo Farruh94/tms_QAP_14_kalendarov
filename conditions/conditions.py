@@ -9,24 +9,22 @@ def positive_number(num):
     """
     if num > 0:
         num += 1
-    else:
-        num += 0
     return num
 
 
-print(positive_number(11))
+print(positive_number(-11))
 
 
 # 2
 # Даны три целых числа. Найти количество положительных чисел в исходном
 # наборе.
-def positive_counter(b):
+def positive_counter(user_list):
     """
     Counts quantity of positive numbers in list and return of count of them
-    :param b list:
+    :param user_list: list
     """
     counter = 0
-    for i in b:
+    for i in user_list:
         if i > 0:
             counter += 1
     return counter

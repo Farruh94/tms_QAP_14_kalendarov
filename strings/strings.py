@@ -32,7 +32,9 @@ def change_str(stroka):
     'переворачивает строку'
 
     """
-    return f"{stroka[0:7:1]}\n{stroka[5:9:1]}\n{stroka[2:14:3]}\n{stroka[::-1]}"
+    centre_of_str = (stroka[4])
+    print(centre_of_str)
+    return stroka[0:7:1], stroka[int(len(stroka)/2) - 2: int(len(stroka)/2) + 2], stroka[2:14:3], stroka[::-1]
 
 
 print(change_str("Душещипательный"))
@@ -69,8 +71,8 @@ def string(test_string):
     считает кол-во букв l
     Проверяет, начинается ли строка с подстроки: “Hello”
     """
-    return f"{test_string.find('w')}\n{test_string.count('l')}\n{test_string[0:4].istitle()}\n" \
-           f"{test_string().islower()}"
+    return test_string.find('w'), test_string.count('l'), test_string[0:4].istitle(), \
+        test_string.islower()
 
 
 print(string("Hello world"))
