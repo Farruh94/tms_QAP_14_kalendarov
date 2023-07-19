@@ -32,9 +32,8 @@ def change_str(stroka):
     'переворачивает строку'
 
     """
-    centre_of_str = (stroka[4])
-    print(centre_of_str)
-    return stroka[0:7:1], stroka[int(len(stroka)/2) - 2: int(len(stroka)/2) + 2], stroka[2:14:3], stroka[::-1]
+    mid = int(len(stroka) / 2)
+    return stroka[0:7:1], stroka[mid - 2:mid + 2], stroka[2:14:3], stroka[::-1]
 
 
 print(change_str("Душещипательный"))
