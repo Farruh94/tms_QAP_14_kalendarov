@@ -48,26 +48,29 @@ print(negative_int_summ)
 # Казак Анна - 28,17
 swimmers = {"Бекиш Александр": 21.07, "Будник Алексей": 20.34, "Гребень Анастасия": 22.12, "Давидович Татьяна": 30,
             "Дешук Дмитрий": 24.01, "Казак Анна": 28.17}
-print(max(swimmers, key=swimmers.get))
+print(min(swimmers, key=swimmers.get))
 # 5
 # Есть массив чисел. Известно, что каждое число в этом массиве имеет пару,
 # кроме одного: [1, 5, 2, 9, 2, 9, 1] => 5 Напишите программу, которая будет выводить
 # уникальное число
 #
-list_1 = [1, 2, 3, 3, 1, 2, 4, 3]
+list_1 = [1, 2, 3, 3, 1, 2, 4, 3, 7]
+unique_elem = []
 for i in list_1:
     if list_1.count(i) < 2:
-        print(i)
+        unique_elem.append(i)
+print(unique_elem)
 
 # Цикл while
 # 1
 # Дано число N. Найти произведение всех чисел от 0 до N.
 number = 10
-zero = 0
+start = 0
 positive_int = 1
-while zero < number:
-    zero += 1
-    positive_int *= zero
+while start < number:
+
+    positive_int *= start
+    start += 1
 print(positive_int)
 
 # 2
