@@ -20,8 +20,9 @@ print(len(val_str))
 #переверните строку
 
 val_str = "Душещипательный"
+slice_str = int(len(val_str) / 2)
 print(val_str[0:7:1])
-print(val_str[5:9:1])
+print(val_str[slice_str - 2: slice_str + 2])
 print(val_str[2:15:3])
 print(val_str[-1:-16:-1])
 #3 Есть строка: “my name is name”. Напечатайте ее, но вместо 2ого “name” вставьте
