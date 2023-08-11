@@ -11,8 +11,6 @@ with open("hw_6_1.txt", "r") as f:
 
 def numbers():
     if a.count(",") >= 2:
-        return a
+        print(a)
     else:
-        return "В файле меньше 3 чисел"
-
-print(numbers())
+        print("В файле меньше 3 чисел")
