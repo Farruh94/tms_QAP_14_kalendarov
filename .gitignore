@@ -2,4 +2,4 @@
 venv
 .pytest_cache
 __pycache__
-geckodriver.log
+hw_17/tests_hw_17/.pytest_cache
